@@ -1,0 +1,29 @@
+.header {
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    padding: 15px 40px;
+    justify-content: space-between;
+}
+
+.title {
+    margin: 0px;
+    color : white;
+    font-size: 28px;
+    
+}
+
+.cartContainer {
+    background-color: cornflowerblue;
+    padding: 10px 15px;
+    height: 50%;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+}
+
+.cart {
+    margin: 0;
+}
