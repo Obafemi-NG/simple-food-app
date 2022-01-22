@@ -5,14 +5,14 @@ import mealsImg from '../../assets/meals.jpg';
 import HeaderCartButton from '../header-cart-button/header-cart-button.component';
 
 
-const Header = () => {
+const Header = (props) => {
     return(
         <React.Fragment>
             <header className = {styles.header} >
                 <h2  >
                     DM FoodApp
                 </h2>
-                <HeaderCartButton/>
+                <HeaderCartButton onClick = {props.onShow} />
             </header>
             <div className = {styles['main-image']} >
                 <img src = {mealsImg} alt = 'A delicious meal for display' />
