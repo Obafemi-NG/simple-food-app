@@ -1,10 +1,15 @@
 import React from 'react';
-import styles from './App.module.css';
+
 import Header from './components/header/header.component';
+import Meals from './components/meals.component';
 
 const App = () => {
   return(
-    <Header/>
+    <React.Fragment>
+      <Header/>
+      <Meals/>
+    </React.Fragment>
+    
   )
 }
 
