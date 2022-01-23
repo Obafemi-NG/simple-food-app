@@ -31,7 +31,7 @@ const MealItemForm = (props) => {
                 min : '0',
                 max : '10',
                 step : '1',
-                defaultValue : '0',
+                defaultValue : '1',
             }} />
             <button > + Add </button>
             {!isInputValid && <p>Please enter a valid number between 1 - 10</p> }
