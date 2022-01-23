@@ -4,7 +4,7 @@ import MealItem from '../meal-item/meal-item.component';
 // import styles from './meals-list.module.css';
 
 const MealsList = () => {
-    const mealList = DUMMY_MEALS.map(meal => <MealItem key = {meal.id} name = {meal.name} description = {meal.description} price = {meal.price} /> )
+    const mealList = DUMMY_MEALS.map(meal => <MealItem key = {meal.id} id = {meal.id} name = {meal.name} description = {meal.description} price = {meal.price} /> )
     return(
         <Card>
             <ul>

@@ -5,9 +5,9 @@ import Modal from '../modal/modal.component';
 const Cart = (props) => {
     const cartItems = [{id : 'ca1', name : 'sushi', amount : 5, price : 35.75}].map(cartItem => {
         return(
-            <ul className = {styles['cart-items']}>
+            <ul className = {styles['cart-items']} key = {cartItem.id}>
                 <li>
-                {cartItem.name}
+                {cartItem.name.toUpperCase()}
                 </li>
             </ul>
         )
@@ -16,8 +16,8 @@ const Cart = (props) => {
     return(
         <Modal onClick = {props.onClose}>
             {cartItems}
-            <div>
-                <span className = {styles.total} >Total Amount</span>
+            <div className = {styles.total} >
+                <span>Total Amount</span>
                 <span>35.75</span>
             </div>
             <div className = {styles.actions}>

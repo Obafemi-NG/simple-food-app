@@ -3,6 +3,7 @@ import Cart from './components/cart/cart.component';
 
 import Header from './components/header/header.component';
 import Meals from './components/meals.component';
+// import CartProvider from './store/store.provider';
 
 const App = () => {
   const [isCartShown, setIsCartShown] = useState(false);
