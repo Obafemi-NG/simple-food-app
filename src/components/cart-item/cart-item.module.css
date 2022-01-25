@@ -11,6 +11,7 @@
   .cart-item h2 {
     margin: 0 0 0.5rem 0;
     color: #363636;
+    font-weight: normal;
   }
   
   .summary {
